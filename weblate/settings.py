@@ -569,12 +569,15 @@ ALLOWED_HOSTS = os.environ.get('WEBLATE_ALLOWED_HOSTS', '*').split(',')
 
 # Example configuration to use memcached for caching
 CACHES = {
+#    'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#         'LOCATION': '{0}:{1}'.format(
+#            'cache',
+#            '11211',
+#        )
+#    },
     'default': {
-         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-         'LOCATION': '{0}:{1}'.format(
-            'cache',
-            '11211',
-        )
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
     },
     'avatar': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
