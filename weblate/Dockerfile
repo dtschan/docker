@@ -25,7 +25,7 @@ ADD start /app/bin/
 RUN chmod a+rx /app/bin/start
 
 # Examples
-RUN curl https://github.com/nijel/weblate/archive/master.zip | tar xzf - --strip-components=1 -C /app Weblate-2.9/examples
+RUN curl -L https://github.com/nijel/weblate/archive/master.tar.gz | tar xzf - --strip-components=1 -C /app weblate-master/examples
 
 RUN install -d -o weblate -g weblate -m 755 /app/data
 RUN ln -s /app/etc/settings.py /usr/local/lib/python2.7/dist-packages/weblate/settings.py
