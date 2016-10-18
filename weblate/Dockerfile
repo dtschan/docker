@@ -2,7 +2,7 @@ FROM debian:jessie-backports
 MAINTAINER Michal Čihař <michal@cihar.com>
 
 # Add user early to get a consistent userid
-RUN useradd --shell /bin/sh --user-group weblate
+RUN useradd -u 1001 --shell /bin/sh --user-group weblate
 
 ADD requirements.txt /tmp/requirements.txt
 
