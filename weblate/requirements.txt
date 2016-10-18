@@ -4,7 +4,7 @@ django-crispy-forms==1.6.0
 python-social-auth==0.2.21
 translate-toolkit>=2.0.0b4,<2.1
 pyLibravatar==1.7
-https://github.com/nijel/weblate/archive/master.tar.gz
+https://github.com/dtschan/weblate/archive/ose3-cleanenv.zip
 pyuca==1.1
 django_compressor==2.1
 djangorestframework>=3.4,<3.5
