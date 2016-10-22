@@ -6,6 +6,8 @@ RUN useradd -u 1001 --shell /bin/sh --user-group weblate
 
 ADD requirements.txt /tmp/requirements.txt
 
+ENV REFRESHED_AT 201710221736
+
 # Install dependencies
 RUN env DEBIAN_FRONTEND=noninteractive apt-get update \
   && apt-get install --no-install-recommends -y ssh curl python-pip python-lxml python-pillow python-psycopg2 python-memcache python-dateutil python-rcssmin python-rjsmin gettext postgresql-client \
