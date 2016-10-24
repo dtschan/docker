@@ -35,7 +35,8 @@ ENV DJANGO_SETTINGS_MODULE weblate.settings
 ENV START_CMD "/usr/local/bin/django-admin"
 
 RUN curl https://raw.githubusercontent.com/appuio/libmapuid/master/lib/libmapuid.so -o /usr/local/lib/libmapuid.so && \
-    chmod 755 /usr/local/lib/libmapuid.so
+    chmod 755 /usr/local/lib/libmapuid.so && \
+    chmod g+w /usr/local/lib/python2.7/dist-packages/weblate/trans/migrations
 
 VOLUME ["/app/etc", "/app/data"]
 USER weblate
