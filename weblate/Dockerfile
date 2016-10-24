@@ -6,7 +6,7 @@ RUN useradd -u 1001 --shell /bin/sh --user-group weblate
 
 ADD requirements.txt /tmp/requirements.txt
 
-ENV REFRESHED_AT 201710221736
+ENV REFRESHED_AT 201710241400
 
 # Install dependencies
 RUN env DEBIAN_FRONTEND=noninteractive apt-get update \
