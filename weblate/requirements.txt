@@ -13,6 +13,7 @@ httpretty==0.8.14
 Babel==2.3.4
 PyDNS==2.3.6
 six>=1.10.0
+PyYAML>=3.0
 # Following are installed using apt:
 # Pillow
 # lxml
