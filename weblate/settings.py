@@ -472,6 +472,8 @@ SITE_TITLE = os.environ.get('WEBLATE_SITE_TITLE', 'Weblate')
 
 # Whether site uses https
 ENABLE_HTTPS = os.environ.get('WEBLATE_ENABLE_HTTPS', '0') == '1'
+REDIRECT_IS_HTTPS = ENABLE_HTTPS
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = ENABLE_HTTPS
 
 # URL of login
 LOGIN_URL = '%s/accounts/login/' % URL_PREFIX
