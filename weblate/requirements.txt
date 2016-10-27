@@ -15,6 +15,8 @@ PyDNS==2.3.6
 six>=1.10.0
 PyYAML>=3.0
 oauthlib>=0.6.3
+gunicorn
+whitenoise
 # Following are installed using apt:
 # Pillow
 # lxml
